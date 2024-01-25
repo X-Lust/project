@@ -60,7 +60,7 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
   transform: scaleX(0);
-  transition: 0.5s linear;
+  transition: 0.2s linear;
 }
 
 .navbar .navbar-nav a:hover::after {
