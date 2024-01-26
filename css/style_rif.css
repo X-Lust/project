@@ -169,13 +169,14 @@ body {
   flex: 1 1 45rem;
 }
 
-.about .row .about-img-rif img {
+.about .row .about-img img {
+  display: flex;
   padding-right: 1rem;
   width: 100%;
 }
 
 .about .row .content {
-  flex-direction: 1 1 35rem;
+  flex: 1 1 35rem;
   padding: 0 1 rem;
 }
 
@@ -208,6 +209,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5rem;
+  justify-content: center;
 }
 
 .menu-card {
@@ -275,7 +277,7 @@ body {
     flex-wrap: wrap;
   }
 
-  .about .row .about-img-rif img {
+  .about .row .about-img img {
     flex-wrap: wrap;
     height: 24rem;
     object-fit: cover;
