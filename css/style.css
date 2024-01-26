@@ -226,7 +226,7 @@ body {
   padding: 5rem 2rem;
   text-align: center;
 }
-.contact .row form .input-groub {
+.contact .row form .input-grub {
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -234,9 +234,9 @@ body {
   border: 1px solid #eee;
   padding-left: 2rem;
 }
-.contact .row form .input-groub input {
+.contact .row form .input-grub input {
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 5rem;
   font-size: 1.7rem;
   background: none;
   color: #fff;
@@ -338,7 +338,8 @@ footer .credit a {
   .contact p {
     font-size: 1.2rem;
   }
-  .contact .row {
+  .contact .row,
+  .menu .row {
     flex-wrap: wrap;
   }
   .contact .row .map {
