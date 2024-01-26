@@ -57,7 +57,7 @@ body {
 }
 
 .navbar .navbar-nav a::after {
-  content: " ";
+  content: "";
   display: block;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
@@ -177,7 +177,8 @@ body {
 
 .about .row .content {
   flex-direction: 1 1 35rem;
-  padding: 0 1 rem;
+  /* padding: 0 1 rem; no spasi untuk satuan rem*/
+  padding: 0 1rem;
 }
 
 .about .row .content h3 {
@@ -202,18 +203,20 @@ body {
   font-size: 1rem;
   margin: auto;
   font-weight: 100;
-  /* line height: 1.6; */
+  line-height: 1.6;
+  /* line height: 1.6; Punya anda kurang - */
 }
 
 .menu .row {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5rem;
+  /* justify-content: center; ini belum ada */
 }
 
-.menu .row .menu-card {
+.menu-card {
   text-align: center;
-  padding-bottom: 12rem;
+  padding-bottom: 4rem;
 }
 
 .menu .row .menu-card img {
