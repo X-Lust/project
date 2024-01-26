@@ -57,7 +57,7 @@ body {
 }
 
 .navbar .navbar-nav a::after {
-  content: " ";
+  content: "";
   display: block;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
@@ -175,8 +175,8 @@ body {
 }
 
 .about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
+  flex-direction: 1 1 35rem;
+  padding: 0 1 rem;
 }
 
 .about .row .content h3 {
@@ -201,14 +201,13 @@ body {
   max-width: 30rem;
   margin: auto;
   font-weight: 100;
-  line-height: 1.6;
+  /* line height: 1.6; */
 }
 
 .menu .row {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5rem;
-  justify-content: center;
 }
 
 .menu-card {
