@@ -119,6 +119,57 @@ body {
   display: none;
 }
 
+/* Shopping Cart */
+.shoppings-cart {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 35rem;
+  padding: 0 1.5rem;
+  color: var(--bg);
+  background-color: #fff;
+  transition: 0.32s linear;
+}
+
+.shoppings-cart img {
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.shoppings-cart .cart-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #222;
+  position: relative;
+}
+
+.shoppings-cart h3 {
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+
+.shoppings-cart .item-price {
+  font-size: 1.2rem;
+}
+
+.shoppings-cart .remove-item {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.shoppings-cart .remove-item:hover {
+  color: var(--primary);
+}
+
+.shoppings-cart.active {
+  right: 0;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -426,6 +477,75 @@ footer .credit a {
   font-weight: bold;
 }
 
+/* Modal Box */
+/* Item Details */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.modal-content img {
+  height: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.modal-content a {
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: var(--primary);
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.modal-container {
+  position: relative;
+  background-color: #fefefe;
+  color: var(--bg);
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #222;
+  width: 80%;
+  animation: animationModal 0.5s;
+}
+
+/* Modal Animation */
+@keyframes animationModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -515,6 +635,10 @@ footer .credit a {
 
   .contact .row form {
     padding-top: 0;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
   }
 }
 
