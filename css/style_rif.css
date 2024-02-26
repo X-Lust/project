@@ -385,11 +385,6 @@ body {
   font-weight: bold;
 }
 
-.products .product-price span {
-  text-decoration-line: line-through;
-  font-weight: lighter;
-  font-size: 1rem;
-}
 /* Contact Section */
 .contact .row {
   display: flex;
@@ -503,8 +498,8 @@ footer .credit a {
 
 .modal-content img {
   height: 20rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  padding-right: 2rem;
+  align-items: center;
 }
 
 .modal-content p {
@@ -524,13 +519,14 @@ footer .credit a {
 }
 
 .modal-container {
-  position: relative;
+  position: absolute;
+  align-content: center;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
+  margin: 15%;
   padding: 1.2rem;
   border: 1px solid #222;
-  width: 80%;
+  width: 80% auto;
   animation: animationModal 0.5s;
 }
 
