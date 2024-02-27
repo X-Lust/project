@@ -120,6 +120,20 @@ body {
 }
 
 /* Shopping Cart */
+#shopping-cart-button {
+  position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: #ff0000;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  right: -10px;
+}
+
 .shoppings-cart {
   position: absolute;
   top: 100%;
@@ -133,7 +147,7 @@ body {
 }
 
 .shoppings-cart img {
-  height: 6rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
@@ -148,26 +162,33 @@ body {
 }
 
 .shoppings-cart h3 {
-  font-size: 1.6rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 
 .shoppings-cart .item-price {
   font-size: 1.2rem;
 }
 
-.shoppings-cart .remove-item {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
-}
-
-.shoppings-cart .remove-item:hover {
-  color: var(--primary);
-}
-
 .shoppings-cart.active {
   right: 0;
+}
+
+.shoppings-cart .cart-item #add,
+.shoppings-cart .cart-item #remove {
+  display: inline-block;
+  padding: 2px 5px;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: #010101;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.shoppings-cart h4 {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+  text-align: center;
 }
 
 /* Hero Section */
